@@ -30,11 +30,11 @@
 				<key>FSName</key>
 				<string>securefs</string>
 				<key>FSfileObjectsAreCaseSensitive</key>
-				<false/>
+				<true/>
 			</dict>
 		</dict>
 		<key>FSRequiresSecurityScopedPathURLResources</key>
-		<false/>
+		<true/>
 		<key>FSShortName</key>
 		<string>securefs</string>
 		<key>FSSupportsBlockResources</key>
@@ -42,7 +42,7 @@
 		<key>FSSupportsGenericURLResources</key>
 		<false/>
 		<key>FSSupportsPathURLs</key>
-		<false/>
+		<true/>
 		<key>FSSupportsServerURLs</key>
 		<false/>
 	</dict>
