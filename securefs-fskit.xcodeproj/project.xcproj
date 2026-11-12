@@ -11,8 +11,21 @@
     ],
   },
   "files": [
-    { "kind": "folder", "path": "securefs-fskit", "target-membership": [ "securefs-fskit" ] },
     {
+      "kind": "folder",
+      "path": "securefs-fskit",
+      "target-membership": [
+        "securefs-fskit",
+      ],
+      "membership-exceptions": [
+        {
+          "target": "securefs-fskit",
+          "exclusions": [
+            "Info.plist",
+          ],
+        },
+      ],
+    }, {
       "kind": "folder",
       "path": "securefs",
       "target-membership": [
@@ -70,6 +83,7 @@
         "ENABLE_HARDENED_RUNTIME": "YES",
         "ENABLE_USER_SELECTED_FILES": "readwrite",
         "GENERATE_INFOPLIST_FILE": "YES",
+        "INFOPLIST_FILE": "securefs-fskit/Info.plist",
         "INFOPLIST_KEY_CFBundleDisplayName": "SecureFS",
         "INFOPLIST_KEY_LSApplicationCategoryType": "public.app-category.utilities",
         "INFOPLIST_KEY_NSHumanReadableCopyright": "",
